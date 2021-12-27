@@ -1,6 +1,4 @@
 import numpy as np
-# weights = [0.2, 0.8, -0.5, 1]
-# bias = 2
 
 inputs = [
     [1, 2, 3, 2.5],
@@ -16,5 +14,5 @@ weights = [
 
 biases = [2, 3, 0.5]
 
-output = np.dot(weights, inputs) + biases
+output = np.dot(inputs, np.array(weights).T) + biases
 print(output)
