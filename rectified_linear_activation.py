@@ -47,11 +47,9 @@ output = layer1.output
 
 plt.scatter(output[:, 0], output[:, 1])
 plt.show()
-# print(layer1.output)
 
 # Rectified Linear Activation
 activation1.forward(output)
 rectifiedOutput = activation1.output
 plt.scatter(rectifiedOutput[:, 0], rectifiedOutput[:, 1])
 plt.show()
-# print(rectifiedOutput)
